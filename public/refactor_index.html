@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+	<!-- Icon -->
+    <link rel="icon" href="logo.png">
+    <title>Simple Chat App</title>
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap.min.css" rel="stylesheet">
+	<!--Custom CSS -->
+    <link href="StyleSheet1.css" rel="stylesheet" />
+	<!-- Emoji CSS -->
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/emojify.js/1.1.0/css/basic/emojify.min.css" />
+</head>
+<body>
+    <nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
+        <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">Group CHAT Application</a>
+    </nav>
+    <div class="container-fluid">
+        <div class="row">
+            <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+                <div class="sidebar-sticky">
+                  <ul class="nav flex-column" id = "userList">
+                      <!-- <li class="nav-item"> -->
+                          <!-- <p class="nav-link"> -->
+                              <!-- <span data-feather="users"></span> -->
+                              <!-- customers -->
+                          <!-- </p> -->
+                      <!-- </li> -->
+                  </ul>  
+                </div>
+            </nav>
+
+            <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+				<div id="content" style="background-image:url('yellow_collage.jpg')"></div>
+						<div>
+                            <span id="status">Connecting...</span>
+                            <input type="text" id="input" disabled="disabled" />
+                            <div class="btn-group mr-2">
+							<!-- <a href="#" id ="emoji"><img src="emoji.png" style="object-fit:fill;height:20px"></a> -->
+                                <button class="btn btn-sm btn-outline-secondary" id ="sbtn"><img src="emoji.png" style="height:20px"></button>
+                            </div>
+                        </div>
+            </main>
+		</div>
+    </div>
+	
+	<!-- Core Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="popper.min.js"></script>
+    <script src="bootstrap.min.js"></script>
+	<!-- Custom JS -->
+	<script src="frontend.js"></script>
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+
+    <!-- Icons -->
+    <script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
+	<!-- Emoji -->
+	<script src="//cdnjs.cloudflare.com/ajax/libs/emojify.js/1.1.0/js/emojify.min.js"></script>
+   
+
+
+</body>
+</html>
